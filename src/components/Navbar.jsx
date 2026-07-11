@@ -34,7 +34,7 @@ const Navbar = () => {
 
         {/* Services Dropdown */}
         <div className="dropdown">
-          <NavLink to="/services" className="dropdown-title">
+          <NavLink to="/service" className="dropdown-title">
             Our Services <FaAngleDown />
           </NavLink>
 

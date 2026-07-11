@@ -8,7 +8,6 @@ const ProductDetails = () => {
   const navigate = useNavigate();
   const { id } = useParams();
 
-  // Current Product
   const product = products.find((item) => item.id === Number(id));
 
   if (!product) {
@@ -20,12 +19,10 @@ const ProductDetails = () => {
     );
   }
 
-  // Current Category
   const category = categories.find(
     (item) => item.name === product.category
   );
 
-  // Products of Same Category
   const relatedProducts = products.filter(
     (item) => item.category === product.category
   );
@@ -52,8 +49,6 @@ const ProductDetails = () => {
   return (
     <div className="product-details-page">
 
-      {/* Header */}
-
       <div className="page-header">
 
         <button
@@ -69,11 +64,7 @@ const ProductDetails = () => {
 
       </div>
 
-      {/* Product Details */}
-
       <div className="product-details-container">
-
-        {/* Left */}
 
         <div className="gallery">
 
@@ -121,8 +112,6 @@ const ProductDetails = () => {
           </div>
 
         </div>
-
-        {/* Right */}
 
         <div className="product-info">
 

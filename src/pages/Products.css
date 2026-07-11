@@ -1,16 +1,8 @@
-/* ===========================
-   Products Page
-=========================== */
-
 .products-page {
     max-width: 1300px;
     margin: 40px auto;
     padding: 20px;
 }
-
-/* ===========================
-   Heading
-=========================== */
 
 .heading h1 {
     font-size: 38px;
@@ -31,9 +23,14 @@
     font-size: 16px;
 }
 
-/* ===========================
-   Product Grid
-=========================== */
+.category-section{
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+.category-description
+{
+  margin-top: 30px;
+}
 
 .products-grid{
     display:grid;
@@ -42,9 +39,6 @@
     margin-top:35px;
 }
 
-/* ===========================
-   Product Card
-=========================== */
 
 .product-card {
     background: #fff;
@@ -59,10 +53,6 @@
     transform: translateY(-6px);
     box-shadow: 0 10px 25px rgba(0,0,0,.12);
 }
-
-/* ===========================
-   Product Image
-=========================== */
 .image-container{
     height:210px;
     display:flex;
@@ -89,30 +79,30 @@
     transform: scale(1.05);
 }
 
-/* ===========================
-   Product Content
-=========================== */
-
-.product-content h3{
-    font-size:20px;
+.product-content h5{
+    font-size:18px;
     font-weight:600;
     line-height:28px;
     height:56px;
     overflow:hidden;
 }
 
-.product-content h3 {
-    font-size: 24px;
+.product-content h5 {
+    font-size: 18px;
     color: #222;
-    margin-bottom: 12px;
+   
     line-height: 1.4;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .price {
     color: #c62828;
-    font-size: 28px;
+    font-size: 18px;
     font-weight: bold;
     margin-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .price span {
@@ -121,35 +111,13 @@
     font-weight: normal;
 }
 
-/* ===========================
-   Table
-=========================== */
-
-.spec-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-bottom: 25px;
-}
-
-.spec-table td {
-    border: 1px solid #ddd;
-    padding: 12px;
-    font-size: 15px;
-}
-
-.spec-table td:first-child {
-    width: 42%;
-    background: #f8f8f8;
-    font-weight: 600;
-}
-
-/* ===========================
-   Button
-=========================== */
-
 .view-btn{
-    width:100%;
-    padding:12px;
+    width:50%;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     border:none;
     border-radius:8px;
     background:#1565c0;
@@ -175,9 +143,7 @@
     transform:translateY(-5px);
     box-shadow:0 10px 30px rgba(0,0,0,.12);
 }
-/* ===========================
-   Responsive
-=========================== */
+
 
 @media(max-width:992px){
 

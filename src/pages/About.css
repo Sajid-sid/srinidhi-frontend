@@ -15,10 +15,13 @@ body {
  }
  .about-page h1
  {
+  text-align: center;
+  padding-top: 7%;
  color:rgb(10, 87, 132);
  }
  .about-page p{
-     font-size: 17px;
+  padding:5%;
+  font-size: 17px;
   line-height: 1.9;
   color: #140202;
   text-align: justify;
