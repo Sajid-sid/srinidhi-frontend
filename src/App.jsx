@@ -8,8 +8,10 @@ import WhatsAppButton from "./components/WhatsAppButton";
 import Repair from "./components/Repair";
 import AMC from "./components/AMC";
 
-import Services from "./components/Services";
-import Products from "./pages/Products";
+
+import Products from '../src/pages/Products.jsx'
+import ProductDetails from './components/ProductDetails.jsx'
+import Services from './components/Services.jsx'
 import Gallery from "./pages/Gallery";
 
 function App() {
@@ -25,8 +27,10 @@ function App() {
         <Route path="/repair" element={<Repair />} />
         <Route path="/amc" element={<AMC />} />
 
-        <Route path="/services" element={<Services />} />
-        <Route path="/products" element={<Products />} />
+       <Route path="/products" element={<Products />} />
+       
+        <Route path="/product/:id" element={<ProductDetails />} />
+        <Route path="/service" element={<Services/>}/>
         <Route path="/gallery" element={<Gallery />} />
 
         <Route path="/contact" element={<Contact />} />

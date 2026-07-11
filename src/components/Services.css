@@ -1,44 +1,156 @@
-.services {
-  padding: 80px 8%;
-  background: #f8f9fa;
-}
-
-.services-container {
+.service {
+  width: 90%;
   max-width: 1200px;
-  margin: auto;
+  margin: 0 auto;
+  padding: 40px 20px;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+/* Main Heading */
+.service h1 {
   text-align: center;
+  font-size: 42px;
+  color: #0056d2;
+  margin-bottom: 10px;
 }
 
-.services-container h1 {
-  color: #0b3d91;
-  margin-bottom: 40px;
-  font-size: 40px;
+/* Section Headings */
+.service h2 {
+  text-align: center;
+  font-size: 30px;
+  color: #222;
+  margin: 35px 0 20px;
 }
 
-.service-cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px,1fr));
-  gap: 25px;
+.service h3 {
+  font-size: 24px;
+  color: #0056d2;
+  margin-top: 30px;
+  margin-left: 200px;
 }
 
-.service-card {
-  background: white;
-  padding: 30px;
-  border-radius: 10px;
-  box-shadow: 0 5px 15px rgba(0,0,0,.1);
-  transition: .3s;
+/* Paragraph Container */
+.para {
+  padding-left: 20px;
+  padding: 20px;
+  border-radius: 12px;
+  margin: 20px 0;
+  line-height: 1.8;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.08);
 }
 
-.service-card:hover {
-  transform: translateY(-8px);
+.para p {
+  padding-left: 50px;
+  font-size: 17px;
+  margin: 0;
 }
 
-.service-card h3 {
-  color: #0b3d91;
-  margin-bottom: 15px;
+
+/* Images */
+.service img {
+  display: block;
+  width: 70%;
+  max-width: 700px;
+  height: auto;
+  margin: 25px auto;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.15);
 }
 
-.service-card p {
-  color: #555;
-  line-height: 1.6;
+.repair {
+  width: 60%;
+}
+
+
+/* Lists */
+.service ul {
+  background: #ffffff;
+  padding: 25px 40px;
+  border-radius: 12px;
+  box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+  margin: 20px 0;
+}
+
+.service li {
+  font-size: 17px;
+  margin: 12px 0;
+  color: #444;
+  position: relative;
+}
+
+.service li::marker {
+  color: #0056d2;
+}
+
+
+/* Responsive Design */
+@media (max-width:768px) {
+
+  .service {
+    width: 95%;
+    padding: 20px 10px;
+  }
+
+  .service h1 {
+    font-size: 32px;
+  }
+
+  .service h2 {
+    font-size: 24px;
+  }
+
+  .service h3 {
+    font-size: 21px;
+  }
+
+  .para {
+    padding: 15px;
+  }
+
+  .para p {
+    font-size: 15px;
+  }
+
+  .service img,
+  .repair {
+    width: 100%;
+  }
+
+  .service ul {
+    padding: 20px 30px;
+  }
+
+  .service li {
+    font-size: 15px;
+  }
+}
+
+
+@media (max-width:480px) {
+
+  .service h1 {
+    font-size: 28px;
+  }
+
+  .service h2 {
+    font-size: 21px;
+  }
+
+  .service h3 {
+    font-size: 19px;
+  }
+
+  .para p {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  .service ul {
+    padding: 15px 25px;
+  }
+
+  .service li {
+    margin: 8px 0;
+  }
 }

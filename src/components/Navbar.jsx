@@ -30,6 +30,7 @@ const Navbar = () => {
 
           </div>
         </div>
+      
 
         {/* Services Dropdown */}
         <div className="dropdown">
@@ -38,7 +39,7 @@ const Navbar = () => {
           </NavLink>
 
           <div className="dropdown-menu">
-            <NavLink to="/services">Services</NavLink>
+              <NavLink to="/service">Services</NavLink>
               <NavLink to="/products">Products</NavLink>
           </div>
         </div>
