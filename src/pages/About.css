@@ -1,61 +1,219 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+ html,
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
 }
-
-.about {
-  width: 100%;
-  min-height: 60vh;
-  background: #f8f9fa;
+ .about-company{
+    align-items: center;
+    gap: 50px;
+    padding: 10px 8%;
+ }
+ img{
+    height:500px;
+    width:100%;
+ }
+ .about-page h1
+ {
+ color:rgb(10, 87, 132);
+ }
+ .about-page p{
+     font-size: 17px;
+  line-height: 1.9;
+  color: #140202;
+  text-align: justify;
+  margin-bottom: 18px;
+ }
+.mission-section {
   display: flex;
-  justify-content: center;
   align-items: center;
-  padding: 80px 20px;
+  gap: 60px;
+  padding: 10px 8%;
 }
-
-.about-container {
-  width: 100%;
-  max-width: 1200px;
-  text-align: center;
+.mission-image {
+  flex: 1;
 }
-
-.about-content h1 {
-  font-size: 48px;
-  color: #0b3d91;
-  font-weight: 700;
-  position: relative;
-  display: inline-block;
+.mission-img img {
+  width: 500px;
+  height: 400px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+.mission-section h1 {
+  font-size: 38px;
+  color: #0b3b75;
   margin-bottom: 20px;
+  font-weight: 700;
 }
 
-.about-content h1::after {
-  content: "";
-  width: 80px;
-  height: 4px;
-  background: #ff9800;
-  display: block;
-  margin: 12px auto 0;
-  border-radius: 5px;
+.mission-content {
+  flex: 1;
+}
+.mission-content p {
+  font-size: 17px;
+  line-height: 1.9;
+  color: #140202;
+  text-align: justify;
+  margin-bottom: 18px;
+}
+.vision-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+    max-width: 1400px;
+    margin: 80px auto;
+    padding: 0 30px;
+    box-sizing: border-box;
 }
 
-/* Responsive */
+.vision-content {
+    flex: 1;
+}
+
+.vision-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.vision-image img {
+    width: 100%;        
+    max-width: 650px;   
+    height: 500px;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.vision-content h2 {
+    font-size: 28px;
+    color: #0b3b75;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.vision-content p {
+    font-size: 17px;
+    line-height: 1.8;
+    color: #0e0404;
+    margin-bottom: 30px;
+}
+.srinidhi h3{
+    color: #0b3b75;
+
+}
+.vision-content ul {
+    padding-left: 22px;
+}
+
+.vision-content li {
+    font-size: 17px;
+    line-height: 2;
+    color: #110707;
+}
+
+@media (max-width: 992px) {
+
+    .about-company,
+    .mission-section,
+    .vision-section {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        padding: 30px 5%;
+        text-align: center;
+    }
+
+    .about-page,
+    .mission-content,
+    .vision-content,
+    .about-img,
+    .mission-img,
+    .vision-image {
+        width: 100%;
+    }
+
+    .about-img img,
+    .mission-img img,
+    .vision-image img {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .about-page h1,
+    .mission-section h1,
+    .vision-content h2 {
+        font-size: 32px;
+    }
+
+    .about-page p,
+    .mission-content p,
+    .vision-content p {
+        font-size: 17px;
+        text-align: justify;
+    }
+
+    .vision-content ul {
+        text-align: left;
+        display: inline-block;
+    }
+}
+
+
 @media (max-width: 768px) {
-  .about {
-    padding: 60px 15px;
-  }
 
-  .about-content h1 {
-    font-size: 36px;
-  }
+    .about-company,
+    .mission-section,
+    .vision-section {
+        padding: 20px;
+        margin: 40px 0;
+        gap: 30px;
+    }
 
-  .about-content h1::after {
-    width: 60px;
-  }
+    .about-page h1,
+    .mission-section h1,
+    .vision-content h2 {
+        font-size: 28px;
+    }
+
+    .about-page p,
+    .mission-content p,
+    .vision-content p {
+        font-size: 16px;
+        line-height: 1.8;
+    }
+
+    .mission-img img,
+    .vision-image img {
+        width: 100%;
+        height: auto;
+    }
+
+    .vision-content li {
+        font-size: 16px;
+        line-height: 1.8;
+    }
 }
 
 @media (max-width: 480px) {
-  .about-content h1 {
-    font-size: 30px;
-  }
+
+    .about-page h1,
+    .mission-section h1,
+    .vision-content h2 {
+        font-size: 24px;
+    }
+
+    .about-page p,
+    .mission-content p,
+    .vision-content p,
+    .vision-content li {
+        font-size: 15px;
+    }
+
+    .mission-img img,
+    .vision-image img {
+        border-radius: 10px;
+    }
 }
