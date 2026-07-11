@@ -1,0 +1,52 @@
+.repair {
+  padding: 80px 8%;
+  background: #f5f7fa;
+}
+
+.repair-container {
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+}
+
+.repair-container h1 {
+  font-size: 40px;
+  color: #0b3d91;
+  margin-bottom: 20px;
+}
+
+.repair-container p {
+  color: #555;
+  font-size: 18px;
+  margin-bottom: 40px;
+  line-height: 1.7;
+}
+
+.repair-cards {
+  display: flex;
+  gap: 25px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.repair-card {
+  width: 320px;
+  background: #fff;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.repair-card:hover {
+  transform: translateY(-8px);
+}
+
+.repair-card h3 {
+  color: #0b3d91;
+  margin-bottom: 15px;
+}
+
+.repair-card p {
+  font-size: 16px;
+}

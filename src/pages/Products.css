@@ -1,0 +1,39 @@
+.products {
+  padding: 80px 8%;
+}
+
+.products-container {
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+}
+
+.products-container h1 {
+  color: #0b3d91;
+  margin-bottom: 40px;
+}
+
+.product-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: center;
+}
+
+.product-card {
+  width: 260px;
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,.1);
+  transition: .3s;
+}
+
+.product-card:hover {
+  transform: translateY(-8px);
+}
+
+.product-card h3 {
+  color: #0b3d91;
+  margin-bottom: 15px;
+}

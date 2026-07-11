@@ -1,0 +1,52 @@
+.amc {
+  padding: 80px 8%;
+  background: #ffffff;
+}
+
+.amc-container {
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+}
+
+.amc-container h1 {
+  font-size: 40px;
+  color: #0b3d91;
+  margin-bottom: 20px;
+}
+
+.amc-container p {
+  color: #555;
+  font-size: 18px;
+  margin-bottom: 40px;
+  line-height: 1.7;
+}
+
+.amc-cards {
+  display: flex;
+  gap: 25px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.amc-card {
+  width: 320px;
+  background: #f8f9fa;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.amc-card:hover {
+  transform: translateY(-8px);
+}
+
+.amc-card h3 {
+  color: #0b3d91;
+  margin-bottom: 15px;
+}
+
+.amc-card p {
+  font-size: 16px;
+}
