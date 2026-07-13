@@ -43,10 +43,13 @@ font-size: 52px;
 .amc-card{
     width: 400px;
     min-height: 380px;
-    background: #fcdb0a;
+    background: #7ab6ee;
     padding: 40px;
     border-radius: 6px;
     box-shadow: 0 5px 20px rgba(0,0,0,.15);
+}
+.amc-card:hover{
+    background-color:rgb(175, 175, 184) ;
 }
 
 .amc-content{
@@ -76,7 +79,7 @@ font-size: 52px;
 .amc-content p{
     font-size:20px;
     line-height:1.9;
-    color:#666;
+    color:#0c0b0b;
     text-align:justify;
     margin-bottom:25px;
 }
@@ -123,7 +126,7 @@ font-size: 52px;
 .amc-benifits-content p {
     font-size: 18px;
     line-height: 1.9;
-    color: #555;
+    color: #0d0c0c;
     text-align: justify;
 }
 

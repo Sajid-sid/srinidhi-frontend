@@ -1,4 +1,5 @@
 import React from 'react';
+import { motion } from "framer-motion";
 import "./Contact.css";
 import ContactBanner from "../assets/contactbanner.webp";
 import Contactimage from "../assets/contactimg.webp";
@@ -6,19 +7,43 @@ import Contactimage from "../assets/contactimg.webp";
 function Contact(){
     return(
         <>
-    <section className='contact-banner'>
+    <motion.section className='contact-banner'
+    initial={{ opacity: 0, scale: 0.9 }}
+  animate={{ opacity: 1, scale: 1 }}
+  transition={{ duration: 1 }}
+>
+    
         <img src = {ContactBanner} alt="contact us"/>
         
-    </section>
+    </motion.section>
     <section className="contact-details">
-        <div className="contact-card">
+        <motion.div className="contact-card"
+     initial={{ x: -120, opacity: 0 }}
+  whileInView={{ x: 0, opacity: 1 }}
+  transition={{ duration: 0.8 }}
+  viewport={{ once: false }}
+  whileHover={{
+    y: -10,
+    scale: 1.03,
+  }}
+    >
+        
             <h2>Address</h2>
             <p>Door No : 6-3-709/A/11,<br/>
                Ground Floor, Exide Battery Lane,<br/>
                Panjagutta, Hyderabad-500082
             </p>
-        </div>
-        <div className="contact-card">
+        </motion.div>
+        <motion.div className="contact-card"
+        initial={{ x: 120, opacity: 0 }}
+  whileInView={{ x: 0, opacity: 1 }}
+  transition={{ duration: 0.8 }}
+  viewport={{ once: false }}
+  whileHover={{
+    y: -10,
+    scale: 1.03,
+  }}
+        >
         <h2>Contact information</h2>
         <div className='information'>
         <p>
@@ -33,9 +58,28 @@ function Contact(){
            srinidhicomfort@gmail.com
 
         </p>
-        </div>
+        </motion.div>
     </section>
-    <section className="contact-form-section">
+    <motion.section className="contact-form-section"
+     initial={{
+        x:100,
+        opacity:0
+    }}
+
+    whileInView={{
+        x:0,
+        opacity:1
+    }}
+
+    transition={{
+        duration:1
+    }}
+
+    viewport={{
+        once:false
+    }}
+    >
+    
         <div className="contact-form">
             <form>
         <label>Name<span>*</span></label>
@@ -67,13 +111,16 @@ function Contact(){
         <button type="submit">Submit</button>
             </form>
         </div>
-   <div className="contact-form-image">
+    
+   <div className="contact-form-image"
+    
+   >
     <img src={Contactimage} alt="customer-Support"/>
    </div>
-    </section>
+    </motion.section>
 
 
         </>
-    )
+  )
 }
 export default Contact;

@@ -1,17 +1,43 @@
+
 import React from "react";
+import { motion } from "framer-motion";
+
 import AboutImage from "../assets/aboutimage.webp"
 import MissionImage from "../assets/missionimage.webp";
 import VisionImage from "../assets/visionimage.webp"
 import "./About.css";
 const About = () => {
+    
+
   return (
     <>
-    <section className="about-company">
-    <div className="about-img">
+    <motion.section
+     className="about-company"
+     initial={{ opacity: 0, y: 80 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.9 }}
+  viewport={{ once: true }}  
+  >
+        
+    <motion.div 
+    className="about-img"
+    initial={{ opacity: 0, x: -100 }}
+  whileInView={{ opacity: 1, x: 0 }}
+  transition={{ duration: 1 }}
+  viewport={{ once: false }}
+    >
+       
           <img src={AboutImage}/>
-    </div>
+          
+    </motion.div>
 
-    <div className="about-page">
+    <motion.div 
+    className="about-page"
+     initial={{ opacity: 0, x: 100 }}
+     whileInView={{ opacity: 1, x: 0 }}
+     transition={{ duration: 1 }}
+     viewport={{ once: true }}
+    >
          <h1> Srinidhi Comfort Solutions</h1>
          <p>  Since 2010, Srinidhi Comfort Solutions, located at Kachiguda, Hyderabad, Telangana,
              Authorized Wholesale Dealer and trader of Toshiba VRF SMMS-E Air Conditioning Unit,
@@ -20,10 +46,19 @@ const About = () => {
              and other obligatory facilities that support us to deliver best quality products in the market. 
              Our understanding in this domain has always supported us to build best in class products at better prices with no compromise on superiority.
               We are also providing AC Installation Service.</p>
-</div>
-</section>
-<section className="mission-section">
+</motion.div>
+</motion.section>
+
+<motion.section 
+className="mission-section"
+initial={{ opacity: 0, x: 100 }}
+  whileInView={{ opacity: 1, x: 0 }}
+  transition={{ duration: 1 }}
+  viewport={{ once: false }}
+>
+
   <div className="mission-img">
+
           <img src={MissionImage}/>
     </div>
 <div className="mission-content">
@@ -39,10 +74,20 @@ const About = () => {
       with our customers through trust, integrity, and customer satisfaction.
     </p>
 </div>
-</section>
-<section className="vision-section">
+</motion.section>
 
+<motion.section
+ className="vision-section"
+ initial={{ opacity: 0, x: -100 }}
+  whileInView={{ opacity: 1, x: 0 }}
+  transition={{ duration: 1 }}
+  viewport={{ once: false }}
+ >
+ 
+   
+  
     <div className="vision-content">
+    
         <h2>Our Vision</h2>
 
         <p>
@@ -66,7 +111,7 @@ const About = () => {
         <img src={VisionImage} alt="Our Vision" />
     </div>
 
-</section>
+</motion.section>
 </>
 )}
 export default About;
