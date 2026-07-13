@@ -1,156 +1,332 @@
 .service {
-  width: 90%;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 40px 20px;
-  font-family: Arial, sans-serif;
-  color: #333;
+    width: 100%;
+    max-width: 1200px;
+    margin: 100px auto 60px;
+    padding: 0 20px;
+    font-family: "Poppins", sans-serif;
 }
 
-/* Main Heading */
+/* Headings */
+
 .service h1 {
-  text-align: center;
-  font-size: 42px;
-  color: #0056d2;
-  margin-bottom: 10px;
+    text-align: center;
+    color: #0056d2;
+    font-size: 38px;
+    margin-bottom: 10px;
 }
 
-/* Section Headings */
 .service h2 {
-  text-align: center;
-  font-size: 30px;
-  color: #222;
-  margin: 35px 0 20px;
+    text-align: center;
+    color: #222;
+    font-size: 30px;
+    margin-bottom: 35px;
 }
+
+
+/* SIDE BY SIDE SECTION */
+
+.page {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    margin: 60px 0;
+}
+
+
+.page-content {
+    width: 50%;
+}
+
+
+.page-image {
+    width: 50%;
+}
+
+
+/* Headings */
 
 .service h3 {
-  font-size: 24px;
-  color: #0056d2;
-  margin-top: 30px;
-  margin-left: 200px;
+    color: #0056d2;
+    font-size: 26px;
+    margin: 0 0 20px;
 }
 
-/* Paragraph Container */
+.service h4 {
+    font-size: 20px;
+    margin: 25px 0 15px;
+    color: #333;
+}
+
+
+/* Paragraph Box */
+
 .para {
-  padding-left: 20px;
-  padding: 20px;
-  border-radius: 12px;
-  margin: 20px 0;
-  line-height: 1.8;
-  box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+    background: #fff;
+    padding: 20px 30px;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+    margin-bottom: 25px;
 }
 
 .para p {
-  padding-left: 50px;
-  font-size: 17px;
-  margin: 0;
+    font-size: 17px;
+    color: #555;
+    line-height: 1.8;
+    margin: 0;
 }
 
 
 /* Images */
-.service img {
-  display: block;
-  width: 70%;
-  max-width: 700px;
-  height: auto;
-  margin: 25px auto;
-  border-radius: 15px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+
+.page-image img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,.15);
 }
 
+
 .repair {
-  width: 60%;
+    object-position: top;
+}
+
+
+.maintanance {
+    object-position: center;
 }
 
 
 /* Lists */
-.service ul {
-  background: #ffffff;
-  padding: 25px 40px;
-  border-radius: 12px;
-  box-shadow: 0 3px 12px rgba(0,0,0,0.08);
-  margin: 20px 0;
-}
 
-.service li {
-  font-size: 17px;
-  margin: 12px 0;
-  color: #444;
-  position: relative;
-}
-
-.service li::marker {
-  color: #0056d2;
+.page-content ul {
+    background: #fff;
+    padding: 25px 40px;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+    margin-bottom: 30px;
 }
 
 
-/* Responsive Design */
+.page-content li {
+    font-size: 17px;
+    color: #444;
+    line-height: 2;
+}
+.page {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    margin: 60px 0;
+}
+
+
+/* Normal section */
+.page-content {
+    width: 50%;
+}
+
+.page-image {
+    width: 50%;
+}
+
+
+/* Image comes to opposite side */
+.page.reverse {
+    flex-direction: row-reverse;
+}
+
+
+.page-image img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+
+/* Mobile */
+@media(max-width:768px){
+
+    .page,
+    .page.reverse {
+        flex-direction: column;
+    }
+
+    .page-content,
+    .page-image {
+        width:100%;
+    }
+
+    .page-image img {
+        height:250px;
+    }
+
+}
+
+.choose-section {
+    margin: 60px auto;
+    max-width: 1100px;
+}
+
+
+.choose-section h3 {
+    text-align: center;
+    color: #0056d2;
+    font-size: 30px;
+    margin-bottom: 35px;
+}
+
+
+/* List container */
+.choose-section ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 0;
+    list-style: none;
+}
+
+
+/* Each item */
+.choose-section li {
+    background: #fff;
+    padding: 18px 25px;
+    border-radius: 12px;
+    font-size: 17px;
+    color: #444;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    transition: all 0.3s ease;
+}
+
+
+/* Add check icon */
+.choose-section li::before {
+    content: "✓";
+    width: 28px;
+    height: 28px;
+    background: #0056d2;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+
+/* Hover effect */
+.choose-section li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+
+
+/* Mobile */
+@media(max-width:768px){
+
+    .choose-section ul {
+        grid-template-columns: 1fr;
+    }
+
+
+    .choose-section h3 {
+        font-size: 24px;
+    }
+
+
+    .choose-section li {
+        font-size: 15px;
+        padding: 15px;
+    }
+
+}
+.banner {
+    width: 100%;
+    height: 500px;
+    padding-left: 50px;
+    border-radius: 12px;
+    margin-bottom: 40px;
+    margin-top: 20px;
+    
+}
+/* Mobile */
+
 @media (max-width:768px) {
 
-  .service {
-    width: 95%;
-    padding: 20px 10px;
-  }
-
-  .service h1 {
-    font-size: 32px;
-  }
-
-  .service h2 {
-    font-size: 24px;
-  }
-
-  .service h3 {
-    font-size: 21px;
-  }
-
-  .para {
-    padding: 15px;
-  }
-
-  .para p {
-    font-size: 15px;
-  }
-
-  .service img,
-  .repair {
-    width: 100%;
-  }
-
-  .service ul {
-    padding: 20px 30px;
-  }
-
-  .service li {
-    font-size: 15px;
-  }
-}
+    .service {
+        margin-top: 80px;
+        padding: 0 15px;
+    }
 
 
-@media (max-width:480px) {
+    .service h1 {
+        font-size: 30px;
+    }
 
-  .service h1 {
-    font-size: 28px;
-  }
 
-  .service h2 {
-    font-size: 21px;
-  }
+    .service h2 {
+        font-size: 22px;
+    }
 
-  .service h3 {
-    font-size: 19px;
-  }
 
-  .para p {
-    font-size: 14px;
-    line-height: 1.6;
-  }
+    /* Stack image and content */
 
-  .service ul {
-    padding: 15px 25px;
-  }
+    .page {
+        flex-direction: column;
+        gap: 25px;
+        margin: 40px 0;
+    }
 
-  .service li {
-    margin: 8px 0;
-  }
+
+    .page-content,
+    .page-image {
+        width: 100%;
+    }
+
+
+    .page-image img {
+        height: 250px;
+    }
+
+
+    .service h3 {
+        font-size: 22px;
+    }
+
+
+    .service h4 {
+        font-size: 18px;
+    }
+
+
+    .para {
+        padding: 18px;
+    }
+
+
+    .para p {
+        font-size: 15px;
+        line-height: 1.7;
+    }
+
+
+    .page-content ul {
+        padding: 20px 25px;
+    }
+
+
+    .page-content li {
+        font-size: 15px;
+    }
+     .banner {
+        height: 250px;
+    }
+
 }
