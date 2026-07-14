@@ -9,7 +9,7 @@
 ========================= */
 
 .navbar {
-  height: 110px;
+  height: 112px;
   background: #fff;
   display: flex;
   justify-content: space-between;
@@ -19,25 +19,57 @@
   overflow: visible;
 }
 
+/* ==========================
+   Logo
+========================== */
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .logo-link {
+  display: flex;
+  align-items: center;
   text-decoration: none;
-  color: inherit;
-  display: inline-block;
 }
 
-.logo-link:hover {
-  text-decoration: none;
-  color: inherit;
-}
-
-.logo h2 {
-  margin: 0;
-  font-size: 32px;
-  font-weight: 700;
-  color: #000;
+.logo-image {
+  width: 300px;      /* Adjust as needed */
+  height: auto;
+  object-fit: contain;
   cursor: pointer;
+  transition: transform 0.3s ease;
 }
 
+/* Hover Effect */
+
+.logo-image:hover {
+  transform: scale(1.05);
+}
+
+/* ==========================
+   Responsive
+========================== */
+
+@media (max-width: 992px) {
+  .logo-image {
+    width: 150px;
+  }
+}
+
+@media (max-width: 768px) {
+  .logo-image {
+    width: 130px;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo-image {
+    width: 110px;
+  }
+}
 /* =========================
    Menu
 ========================= */

@@ -4,15 +4,17 @@ import { NavLink } from "react-router-dom";
 import { FaAngleDown } from "react-icons/fa";
 import { FaPhoneAlt, FaPaperPlane } from "react-icons/fa";
 
+import logo from "../assets/logo.webp";
+
 
 const Navbar = () => {
   return (
     <header className="navbar">
       <div className="logo">
-        <NavLink to="/" className="logo-link">
-          <h2>Srinidhi</h2>
-        </NavLink>
-      </div>
+  <NavLink to="/" className="logo-link">
+    <img src={logo} alt="Srinidhi Logo" className="logo-image" />
+  </NavLink>
+</div>
 
       <nav className="menu">
         <NavLink to="/">Home</NavLink>

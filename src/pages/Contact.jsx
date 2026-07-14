@@ -119,6 +119,20 @@ function Contact(){
    </div>
     </motion.section>
 
+        <div className="contact-content">
+
+          {/* Google Map */}
+          <div className="contact-map">
+            <iframe
+              title="Google Map"
+              src="https://www.google.com/maps?q=Panjagutta,Hyderabad&output=embed"
+              style={{ border: 0 }}
+              loading="lazy"
+              allowFullScreen
+            ></iframe>
+          </div>
+        </div>
+
 
         </>
   )

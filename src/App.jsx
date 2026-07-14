@@ -14,6 +14,9 @@ import ProductDetails from './components/ProductDetails.jsx'
 import Services from './components/Services.jsx'
 import Gallery from "./pages/Gallery";
 
+
+import Footer from "./components/Footer";
+
 function App() {
   return (
     <BrowserRouter>
@@ -35,6 +38,8 @@ function App() {
 
         <Route path="/contact" element={<Contact />} />
       </Routes>
+
+        <Footer />
     </BrowserRouter>
   );
 }
