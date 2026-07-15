@@ -1,7 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import "./Products.css";
-
+import Productsbanner from "../assets/productsbanner.webp";
 import { products } from "../assets/data/Products";
 import { categories } from "../assets/data/categories";
 
@@ -10,7 +10,9 @@ const Products = () => {
 
   return (
     <div className="products-page">
-
+    
+      <img src={Productsbanner} alt="product-banner" className="product-banner"/>
+    
       {/* Page Heading */}
 
       <div className="heading">

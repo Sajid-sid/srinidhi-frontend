@@ -3,6 +3,10 @@
     margin: 40px auto;
     padding: 20px;
 }
+.product-banner
+{
+    border-radius: 30px;
+}
 
 .heading h1 {
     font-size: 38px;
